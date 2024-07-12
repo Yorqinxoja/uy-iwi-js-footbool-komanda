@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="register_form">
+        <h1>Football Player Registration</h1>
+        <form id="playerForm">
+            <label for="name">Player Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            <label for="club">Club:</label>
+            <input type="text" id="club" name="club" required><br><br>
+            <button type="submit">Register Player</button>
+        </form>
+        
+        <h2>Registered Players</h2>
+        <div id="playerList"></div>
+    
+        <h2>Filter Players by Club</h2>
+        <label for="filterClub">Club:</label>
+        <input type="text" id="filterClub" name="filterClub">
+        <button onclick="filterByClub()">Filter</button>
+    
+        <h2>Transfer Player</h2>
+        <label for="transferName">Player Name:</label>
+        <input type="text" id="transferName" name="transferName" required><br><br>
+        <label for="newClub">New Club:</label>
+        <input type="text" id="newClub" name="newClub" required><br><br>
+        <button onclick="transferPlayer()">Transfer</button>
+    </div>
+
+    <div class="football" style="--position: 0;"></div>
+    <div class="football" style="--position: 0.1;"></div>
+    <div class="football" style="--position: 0.2;"></div>
+    <div class="football" style="--position: 0.3;"></div>
+    <div class="football" style="--position: 0.4;"></div>
+    <div class="football" style="--position: 0.5;"></div>
+    <div class="football" style="--position: 0.6;"></div>
+    <div class="football" style="--position: 0.7;"></div>
+    <div class="football" style="--position: 0.8;"></div>
+    <div class="football" style="--position: 0.9;"></div>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
